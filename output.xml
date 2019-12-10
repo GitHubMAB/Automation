@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20191022 11:17:58.981" generator="Robot 3.1.2 (Python 2.7.6 on win32)">
+<suite source="C:\Users\MOHAMED AMINE BOUKIL\Automation\Appium_Tests\app.robot" id="s1" name="App">
+<test id="s1-t1" name="test_demo">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=8.1.0</arg>
+<arg>deviceName=DUB_LX1</arg>
+<arg>app=com.android.chrome</arg>
+<arg>automationName=appium</arg>
+<arg>appPackage=com.android.chrome</arg>
+<arg>appActivity=com.google.android.apps.chrome.Main</arg>
+</arguments>
+<status status="PASS" endtime="20191022 11:18:10.754" starttime="20191022 11:17:59.359"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20191022 11:18:13.755" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20191022 11:18:13.755" starttime="20191022 11:18:10.754"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@text='Accepter et continuer']</arg>
+</arguments>
+<msg timestamp="20191022 11:18:13.759" level="INFO">Clicking element '//*[@text='Accepter et continuer']'.</msg>
+<status status="PASS" endtime="20191022 11:18:14.180" starttime="20191022 11:18:13.756"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20191022 11:18:17.181" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20191022 11:18:17.181" starttime="20191022 11:18:14.180"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@text='Suivant']</arg>
+</arguments>
+<msg timestamp="20191022 11:18:17.182" level="INFO">Clicking element '//*[@text='Suivant']'.</msg>
+<status status="PASS" endtime="20191022 11:18:17.573" starttime="20191022 11:18:17.181"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20191022 11:18:20.573" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20191022 11:18:20.573" starttime="20191022 11:18:17.573"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@text=concat('J', "'", 'accepte')]</arg>
+</arguments>
+<msg timestamp="20191022 11:18:20.574" level="INFO">Clicking element '//*[@text=concat('J', "'", 'accepte')]'.</msg>
+<status status="PASS" endtime="20191022 11:18:21.045" starttime="20191022 11:18:20.573"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20191022 11:18:24.045" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20191022 11:18:24.045" starttime="20191022 11:18:21.045"></status>
+</kw>
+<kw name="Go To Url" library="AppiumLibrary">
+<doc>Opens URL in default web browser.</doc>
+<arguments>
+<arg>http://www.youtube.com</arg>
+</arguments>
+<status status="PASS" endtime="20191022 11:18:24.578" starttime="20191022 11:18:24.045"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20191022 11:18:29.579" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20191022 11:18:29.579" starttime="20191022 11:18:24.578"></status>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" endtime="20191022 11:18:31.400" starttime="20191022 11:18:29.579"></status>
+</kw>
+<tags>
+<tag>regression</tag>
+</tags>
+<status status="PASS" endtime="20191022 11:18:31.401" critical="yes" starttime="20191022 11:17:59.358"></status>
+</test>
+<status status="PASS" endtime="20191022 11:18:31.401" starttime="20191022 11:17:58.982"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">regression</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="App" pass="1">App</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
